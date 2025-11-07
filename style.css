@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    width: 406.03px;
+    border-top: 1px solid black;
+    margin: 50px auto; 
+}
+button{
+    width: 300px;
+    height: 65px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    background-color: #4C2F27;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Шапка сайта */
+.logo img{
+    width: 80px;
+    height: 65px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 49px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    font-family: "Open Sans";
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover{
+    color: #7c4e42;
+}
+
+.active{
+    color: #7c4e42;
+    border-bottom: 2px solid transparent;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #7c4e42;
+    animation: lineExpand 0.8s forwards;
+}
+
+@keyframes lineExpand {
+    0% {
+        width: 0;
+        left: 50%;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+/* Главная */
+.intro{
+    background-image: url("Главна_фото/intro2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 760px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+}
+.intro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333333;
+    opacity: 35%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+    bottom: 50px; 
+    right: 50px; 
+    align-items: flex-end; 
+    text-align: right; 
+}
+.text h1{
+    position: relative;
+    color: #B5AB8B;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 1px;
+    line-height: 85px;
+    text-shadow: 
+        1px 1px 0 #8C846B,
+        -1px -1px 0 #8C846B;
+}
+.text h3{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 50px;
+    text-shadow: 
+        1px 1px 0 #4C2F27,
+        -1px -1px 0 #4C2F27;
+}
+.block_describe{
+    display: flex;
+    justify-content: space-around;
+}
+.describe{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.describe h3{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Open Sans";
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.text2{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.block_describe img{
+    max-width: 600px;
+    height: 600px;
+}
+.block_advantages h3{
+    margin-bottom: 50px;
+    color: black;
+    font-size: 26px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+}
+.advantages{
+    display: flex;
+    justify-content: center;
+   gap: 50px;
+}
+.advantages_row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.advantages_describe{
+    width: 550px;
+    font-size: 22px;
+    font-family: "Open Sans";
+    line-height: 28px;
+    background-color: #4C2F27;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+.ad1{
+    height: 40px; 
+}
+.ad2{
+    height: 60px;
+}
+.ad3{
+    height: 90px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+form h3{
+    font-size: 30px;
+    font-family: "Open Sans";
+    font-weight: 500;
+}
+form h6{
+    font-size: 25px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+form input{
+    width: 700px;
+    height: 60px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-left: 17px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: transparent;
+    position: relative;
+}
+
+form input:focus{
+    outline: none;
+    border-color: #7c4e42;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(124, 78, 66, 0.15);
+}
+form button:hover{
+    background-color: white;
+    border: 2px #4C2F27 solid;
+    color: black;
+}
+
+/* Услуги */
+.service{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 92px;
+}
+.service img{
+    width: 714px;
+    height: 476px;
+}
+.service h1{
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 30px;
+}
+.service h6{
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+}
+.service ul{
+    width: 602px;
+    font-family: "Open Sans";
+}
+.service li{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+.describe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.describe button:hover{
+    background-color: white;
+    border: 2px #4C2F27 solid;
+    color: black;
+}
+
+/* Портфолио */
+.flat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 120px;
+}
+.flat a {
+    display: block; 
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.flat h3{
+    font-family: "Open Sans";
+    font-size: 28px;
+    font-weight: bold;
+}
+.flat img{
+    width: 407px;
+    margin-top: 60px;
+    transition: transform 0.3s ease; 
+    display: block;
+}
+
+.flat img:hover {
+    transform: scale(1.03); 
+}
+
+/* Галерея */
+.galery_block h2{
+    font-family: "Open Sans";
+    font-size: 28px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 30px 0;
+    text-align: center;
+}
+.galery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.galery_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.galery img {
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 374px;
+    width: 424px;
+}
+
+.galery img:hover {
+    transform: scale(1.03);
+}
+
+/* Контакты */
+.block_contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-bottom: 145px;
+}
+.block_contacts img{
+    width: 680px;
+}
+.info_contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.info{
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.telefon, .info_adress, .info_email{
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: normal;
+}
+
+/* Отзывы */
+.comment { 
+    display: none;
+     animation: fadeIn 0.7s ease-in-out;
+}
+
+#c1:checked ~ .block_reviews .c1,
+#c2:checked ~ .block_reviews .c2 {
+    display: block;
+}
+.block_comments {
+    margin-top: 195px;
+    margin-bottom: 195px;
+    text-align: center;
+}
+
+.block_comments input {
+    margin: 0 15px;
+    transform: scale(3.0);
+    cursor: pointer;
+    transition: all 0.7s ease;
+    position: relative;
+    accent-color: #FFFDE7;
+}
+
+.block_comments input[type="radio"]:checked {
+    transform: scale(3.3) rotate(180deg);
+    accent-color: #4C2F27;
+}
+
+.block_reviews {
+    width: 922px;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #4C2F27;
+    background-color: #D9D9D9;
+    margin: 20px auto 0; 
+    text-align: left;
+}
+.comment h6{
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.text_comment{
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: justify;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Подвал сайта */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4C2F27;
+    color: white;
+    margin-top: 50px;
+    padding: 20px 20px;
+}
+.img_contacts{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+ 
+}
+.img_contacts img{
+    width: 30px;
+}
+.email, .adress{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+/* Главная */
+@media (max-width: 1195px){
+    .block_describe{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .describe{
+        gap: 20px;
+        text-align: justify;
+    }
+    .advantages{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .advantages_describe{
+        width: 550px;
+        height: 70px;
+    }
+}
+@media (max-width: 895px){
+    nav ul{
+        gap: 25px;
+    }
+    .intro{
+        background-position: -495px;
+    }
+    .text h1{
+        font-size: 65px;
+    }
+    .text h3{
+        font-size: 25px;
+    }
+    .block_describe img{
+        max-width: 500px;
+        height: 500px;
+    }
+    .describe{
+        width: 580px;
+    }
+    .describe h3{
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .text2{
+        font-size: 20px;
+    }
+    .block_advantages h3{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .advantages_describe{
+        font-size: 20px;
+    }
+    form{
+        gap: 20px;
+    }
+    form h3{
+        font-size: 26px;
+    }
+    form h6{
+        font-size: 18px;
+    }
+    form input{
+        width: 550px;
+        height: 35px;
+        font-size: 18px;
+    }
+    button{
+        width: 250px;
+        height: 50px;
+        font-size: 18px;
+    }
+    footer{
+        margin-top: 35px;
+        padding: 12px 12px;
+    }
+    .img_contacts{
+        gap: 20px;
+    }
+}
+@media(max-width: 615px){
+     nav{
+        justify-content: center;
+        gap: 15px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .logo img{
+        width: 65px;
+        height: 50px;
+    }
+    .intro{
+        background-position: -530px;
+    }
+    .text h1{
+        font-size: 50px;
+        line-height: 43px;
+    }
+    .text h3{
+        font-size: 15px;
+    }
+    .block_describe img{
+        max-width: 350px;
+        height: 350px;
+    }
+    .describe{
+        width: 400px;
+        gap: 15px;
+    }
+    .describe h3{
+        font-size: 20px;
+    }
+    .text2{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    hr{
+        width: 300px;
+    }
+    .block_advantages h3{
+        font-size: 20px;
+    }
+    .advantages_describe{
+        width: 450px;
+        height: 60px;
+        font-size: 18px;
+    }
+    form h3{
+        font-size: 20px;
+    }
+    form h6{
+        font-size: 18px;
+    }
+    form input{
+        width: 340px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .contacts{
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .img_contacts img{
+        width: 25px;
+    }
+    .adress, .email{
+        font-size: 14px;
+    }
+} 
+@media(max-width: 485px){
+    .logo img{
+        width: 50px;
+        height: 40px;
+    }
+    nav{
+        justify-content: center;
+        gap: 15px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+    .text{
+        bottom: 70%;
+        right: 15%;
+    }
+    .text h1{
+        font-size: 40px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .text h3{
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: normal;
+    }
+    hr{
+        width: 200px;
+    }
+    .block_describe img{
+        max-width: 275px;
+        height: 275px;
+    }
+    .describe{
+        width: 275px;
+        gap: 20px;
+    }
+    .describe h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .text2{
+        font-size: 14px;
+        line-height: 30px;
+    }
+      .block_advantages h3{
+        font-size: 18px;
+        margin-bottom: 23px;
+    }
+    .advantages_describe{
+        width: 310px;
+        height: 50px;
+        line-height: 18px;
+        font-size: 15px;
+    }
+    form{
+        gap: 10px;
+    }
+    form h3{
+        font-size: 18px;
+    }
+    form h6{
+        font-size: 15px;
+        text-align: center;
+    }
+    form input{
+        width: 300px;
+        height: 35px;
+        font-size: 14px;
+    }
+    button{
+        width: 200px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .img_contacts img{
+        width: 20px;
+    }
+    .adress,.email{
+        font-size: 12px;
+    }
+}
+/* Услуги */
+@media (max-width: 1410px){
+    .service{
+        gap: 50px;
+    }
+    .service ul{
+        width: 390px;
+    }
+    .service img{
+        width: 614px;
+        height: 376px;
+    }
+}
+@media (max-width: 1050px){
+    .service{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .service ul{
+        text-align: justify;
+        width: 400px;
+    }
+    .service img{
+        width: 614px;
+        height: 376px;
+    }
+    .describe{
+        gap: 8px;
+    }
+}
+@media(max-width: 615px){
+     .service img{
+        width: 414px;
+        height: 276px;
+    }
+    .service h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .service h6{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+@media(max-width: 485px){
+     .service ul{
+        width: 300px;
+    }
+     .service li{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .service img{
+        width: 314px;
+        height: 200px;
+    }
+     .service h1{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .service h6{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .describe{
+        gap: 6px;
+    }
+}
+/* Портфолио */
+@media (max-width: 700px){
+    .flat{
+        margin-top: 70px;
+        margin-bottom: 120px;
+    }
+   .flat img{
+        width: 307px;
+        margin-top: 50px;
+    }
+   .flat h3{
+        font-size: 24px;
+    }
+}
+@media(max-width: 485px){
+    .flat{
+        margin-top: 93px;
+        margin-bottom: 140px;
+        gap: 10px;
+    }
+    .flat img{
+        width: 300px;
+        margin-top: 45px;
+    }
+   .flat h3{
+        font-size: 17px;
+    }
+}
+/* Галерея */
+@media (max-width: 895px) {
+    .galery_block h2{
+        font-size: 23px;
+    }
+}
+@media (max-width: 650px){
+    .galery img{
+        height: 274px;
+        width: 324px;
+    }
+}
+@media(max-width: 505px){
+    .galery_row{
+        gap: 20px;
+    }
+    .galery_block h2{
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+/* Контакты */
+@media (max-width: 990px){
+    .block_contacts{
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .block_contacts img{
+        width: 650px;
+    }
+    .name_studio, .info, .telefon, .info_adress, .info_email{
+        font-size: 18px;
+    }
+}
+@media (max-width: 650px){
+    .block_contacts{
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+    .info_contacts{
+        gap: 5px;
+    }
+     .block_contacts img{
+        width: 400px;
+    }
+    .name_studio, .info, .telefon, .info_adress, .info_email{
+        font-size: 17px;
+    }
+}
+@media(max-width: 480px){
+    .block_contacts{
+        gap: 50px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+     .info_contacts{
+        gap: 10px;
+    }
+     .block_contacts img{
+        width: 343px;
+    }
+    .info, .telefon, .info_adress, .info_email{
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+/* Отзывы */
+@media(max-width: 1000px){
+    .block_reviews {
+        width: 722px;
+    }
+}
+@media(max-width: 804px){
+    .block_reviews {
+        width: 522px;
+    }
+}
+@media(max-width: 595px){
+     .block_reviews {
+        width: 322px;
+    }
+    .comment h6{
+        font-size: 18px;
+    }
+    .text_comment{
+        font-size: 14px;
+    }
+    .block_comments{
+        margin-top: 110px;
+        margin-bottom: 135px;
+    }
+    .block_comments input {
+        margin: 0 10px;
+        transform: scale(2.0);
+    }
+    .block_comments input[type="radio"]:checked {
+        transform: scale(2.7) rotate(170deg);
+    }
+}
+@media(max-width: 485px){
+    .block_reviews {
+        width: 222px;
+    }
+    .comment h6{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .text_comment{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .block_comments{
+        margin-top: 160px;
+        margin-bottom: 170px;
+    }
+    .block_comments input[type="radio"]:checked {
+        transform: scale(2.5) rotate(150deg);
+    }
+}
