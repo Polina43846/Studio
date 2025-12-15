@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body{
+    height: 100%;
     margin: 0;
     font-family: "Open Sans";
+}
+.wrapper{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex: 1 1 auto;
 }
 *{
     margin: 0;
@@ -947,4 +957,5 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
