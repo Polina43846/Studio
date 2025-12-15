@@ -397,6 +397,7 @@ form button:hover{
     display: block;
 }
 .block_comments {
+    margin-top: 150px
     text-align: center;
 }
 .block_comments input {
@@ -954,6 +955,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
