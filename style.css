@@ -5,12 +5,6 @@ body{
     margin: 0;
     font-family: "Open Sans";
 }
-.flat, .block_contacts, .block_comments{
-     flex: 1 0 auto;
-}
-footer {
-    flex-shrink: 0; 
-}
 *{
     margin: 0;
     padding: 0;
@@ -954,6 +948,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
