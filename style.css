@@ -261,7 +261,7 @@ form button:hover{
     margin-top: 50px;
     display: flex;
     align-items: center;
-    gap: 92px;
+    justify-content: space-around;
 }
 .service img{
     width: 714px;
@@ -957,3 +957,4 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
