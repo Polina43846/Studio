@@ -9,6 +9,15 @@ body{
     margin: 0;
     padding: 0;
 }
+.wrapper{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    flex: 1 1 auto;
+}
 hr{
     width: 406.03px;
     border-top: 1px solid black;
@@ -948,6 +957,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
