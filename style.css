@@ -363,7 +363,8 @@ form button:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin-top: 150px; */
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 .block_contacts img{
     width: 680px;
@@ -955,6 +956,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
