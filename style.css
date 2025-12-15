@@ -304,8 +304,8 @@ form button:hover{
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: 55px;
-    margin-bottom: 130px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 .flat a {
     display: block; 
@@ -358,14 +358,12 @@ form button:hover{
 .galery img:hover {
     transform: scale(1.03);
 }
-
 /* Контакты */
 .block_contacts{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 119px;
-    margin-bottom: 160px;
+    margin-top: 150px;
 }
 .block_contacts img{
     width: 680px;
@@ -957,6 +955,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
