@@ -363,8 +363,8 @@ form button:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 .block_contacts img{
     width: 680px;
@@ -397,8 +397,6 @@ form button:hover{
     display: block;
 }
 .block_comments {
-    margin-top: 215px;
-    margin-bottom: 215px;
     text-align: center;
 }
 .block_comments input {
@@ -956,6 +954,7 @@ footer{
         transform: scale(2.5) rotate(150deg);
     }
 }
+
 
 
 
